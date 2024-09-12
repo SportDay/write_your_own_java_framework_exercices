@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SuppressWarnings({"unused", "static-method"})
 public class JSONWriterTest {
-  /*
+
   @Nested
   public class Q1 {
     @Test @Tag("Q1")
@@ -137,7 +137,7 @@ public class JSONWriterTest {
       return time;
     }
   }
-
+/*
 
   @Nested
   public class Q5 {
@@ -162,8 +162,8 @@ public class JSONWriterTest {
     @Test @Tag("Q5")
     public void configureTwice() {
       var writer = new JSONWriter();
-      writer.configure(LocalTime.class, __ -> "foo");
-      assertThrows(IllegalStateException.class, () -> writer.configure(LocalTime.class, __ -> "bar"));
+      writer.configure(LocalTime.class, b -> "foo");
+      assertThrows(IllegalStateException.class, () -> writer.configure(LocalTime.class, b -> "bar"));
     }
 
     @Test @Tag("Q5")
@@ -176,7 +176,7 @@ public class JSONWriterTest {
     }
 
   } // end of Q5
-
+/*
   @Nested
   public class Q6 {
     @Test @Tag("Q6")
