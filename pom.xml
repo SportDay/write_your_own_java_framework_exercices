@@ -49,7 +49,7 @@
           <compilerArgs>
             <compilerArg>--enable-preview</compilerArg>
           </compilerArgs>
-          <release>2</release>
+          <release>22</release>
           <source>22</source>
           <target>22</target>
         </configuration>
