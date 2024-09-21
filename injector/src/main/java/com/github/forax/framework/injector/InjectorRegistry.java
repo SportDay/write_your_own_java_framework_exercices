@@ -106,27 +106,23 @@ public final class InjectorRegistry {
   }
 
   public <T> void registerProviderClass(Class<T> type, Class<? extends T> providerClass) {
-    Objects.requireNonNull(type);
-    Objects.requireNonNull(providerClass);
-
-//    var constructor = Utils.defaultConstructor(providerClass); //Q5
-    var constructor = findInjectableConstructor(type);
+    Objects.requireNonNull(type, "type cannot be null");
+    Objects.requireNonNull(providerClass, "providerClass cannot be null");
+    var constructor = findInjectableConstructor(providerClass);
     var properties = findInjectableProperties(providerClass);
     var parameterTypes = constructor.getParameterTypes();
-
     registerProvider(type, () -> {
       var args = Arrays.stream(parameterTypes)
               .map(this::lookupInstance)
               .toArray();
-//      var instance = Utils.newInstance(constructor); Q5
       var instance = Utils.newInstance(constructor, args);
-      for(var e : properties){
-        var set = e.getWriteMethod();
-        var tmp = lookupInstance(e.getPropertyType());
-        Utils.invokeMethod(instance, set, tmp);
+      for (var property : properties) {
+        var propertyType = property.getPropertyType();
+        var value = lookupInstance(propertyType);
+        Utils.invokeMethod(instance, property.getWriteMethod(), value);
       }
-//      return instance; Q5
       return providerClass.cast(instance);
     });
+
   }
 }
