@@ -27,7 +27,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SuppressWarnings("static-method")
 public class ORMTest {
-  /*
   @Nested
   public class Q1 {
     @Test @Tag("Q1")
@@ -593,6 +592,7 @@ public class ORMTest {
     }
   }
 
+  /*
 
   @Nested
   public class Q6 {
@@ -654,6 +654,8 @@ public class ORMTest {
       assertThrows(NullPointerException.class, () -> ORM.createRepository(null));
     }
   }
+
+  /*
 
   @Nested
   public class Q7 {
