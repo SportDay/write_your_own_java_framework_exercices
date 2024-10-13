@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="add sonar">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/com/github/forax/framework/orm/ORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/com/github/forax/framework/orm/ORM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/test/java/com/github/forax/framework/orm/ORMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/test/java/com/github/forax/framework/orm/ORMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="add tp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +238,7 @@
       <workItem from="1726429306843" duration="8000" />
       <workItem from="1726945536724" duration="2478000" />
       <workItem from="1727008635650" duration="1051000" />
-      <workItem from="1728813146340" duration="510000" />
+      <workItem from="1728813146340" duration="1050000" />
     </task>
     <task id="LOCAL-00002" summary="add sonar">
       <option name="closed" value="true" />
@@ -293,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727009111441</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add tp">
+      <option name="closed" value="true" />
+      <created>1728813804781</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728813804781</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +315,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rework interceptor code/questions" />
     <MESSAGE value="use throw switch in the tests" />
     <MESSAGE value="remove weird import that make the CI fails" />
     <MESSAGE value="update injector and rewrite annotation scanner" />
@@ -337,6 +339,7 @@
     <MESSAGE value="fin tp1" />
     <MESSAGE value="add q6" />
     <MESSAGE value="fix merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix merge" />
+    <MESSAGE value="add tp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tp" />
   </component>
 </project>
