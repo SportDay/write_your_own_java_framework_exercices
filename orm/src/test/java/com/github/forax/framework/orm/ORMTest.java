@@ -592,7 +592,6 @@ public class ORMTest {
     }
   }
 
-  /*
 
   @Nested
   public class Q6 {
@@ -683,7 +682,7 @@ public class ORMTest {
           assertTrue(resultSet.next());
           var beanInfo = Utils.beanInfo(Person.class);
           var constructor = Utils.defaultConstructor(Person.class);
-          entity = ORM.toEntityClass(resultSet, beanInfo, constructor);
+          entity = ORM.toEntityClass(beanInfo, constructor, resultSet);
           assertFalse(resultSet.next());
         }
         assertEquals(new Person(42L, "scott tiger"), entity);
@@ -914,6 +913,7 @@ public class ORMTest {
     }
   }
 
+
   @Nested
   class Q10 {
 
@@ -1052,6 +1052,7 @@ public class ORMTest {
     }
   }
 
+  /*
 
   @Nested
   public class Q12 {
